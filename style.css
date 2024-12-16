@@ -1,0 +1,342 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: block;
+  background-image: url("images/Backrooms\ lvl37.png");
+  background-position: 50%;
+  background-size: cover;
+  background-attachment: inherit;
+}
+
+.cover {
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* build your layout */
+.top {
+  height: 50%;
+  width: 100%;
+  display: block;
+}
+
+.tf {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+
+.low1 {
+  height: 25%;
+  width: 100%;
+  display: flex;
+}
+.flexdiv {
+  height: 100%;
+  width: 35%;
+  display: block;
+}
+
+.blockdiv {
+  height: 100%;
+  width: 30%;
+  display: block;
+}
+#rightImage {
+  display: block; /* Ensures the image acts like a block element */
+  margin-left: auto; /* Pushes the image to the right */
+  margin-right: 0; /* Ensures no extra space on the right */
+  max-width: 100%; /* Optional: Makes the image responsive */
+}
+
+.low2 {
+  height: 25%;
+  width: 100%;
+  display: flex;
+}
+
+.first {
+  height: 100%;
+  width: 18.5%;
+}
+
+.second {
+  height: 100%;
+  width: 20%;
+}
+.third {
+  height: 100%;
+  width: 50%;
+}
+
+.lowfir {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+.lowsec {
+  height: 100%;
+  width: 73%;
+}
+.lowthird {
+  height: 100%;
+  width: 15%;
+}
+
+.opac {
+  opacity: 0.4;
+}
+
+/* control your content */
+.cc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ct {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  max-height: 95%;
+  max-width: 95%;
+}
+
+.clickable {
+  filter: brightness(70%) drop-shadow(2px 8px 3px);
+}
+
+/* suggest the element is clickable */
+.clickable:hover {
+  cursor: pointer;
+  filter: brightness(100%) drop-shadow(2px 8px 3px);
+}
+
+/* add satisfaction to click */
+.clickable:active {
+  filter: drop-shadow(0px 0px 3px);
+  transform: scale(0.98);
+}
+
+/* Add a modal pop-up window */
+/* https://en.wikipedia.org/wiki/Modal_window */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: #1c1c1c;
+  opacity: 0.7;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Background overlay */
+}
+
+.cb {
+  float: right;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.roomodal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/images_enhanced.jpg");
+  background-position: 100%;
+  background-size: cover;
+  background-attachment: inherit;
+  opacity: 1;
+}
+
+.roomc {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  margin: 0;
+  display: block;
+}
+
+.text {
+  height: 300px;
+  font-family: "Courier New", monospace;
+  text-align: center;
+  margin: 8px 0em 0em 8px;
+  color: rgb(0, 0, 0);
+  opacity: 1;
+  font-size: 6vmax;
+}
+.mc {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 1;
+  margin: 0;
+  display: block;
+}
+
+.intro {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: ;
+}
+
+.mc2 {
+  width: 90%;
+  height: 90%;
+  background-color: #ffffff;
+  opacity: 0.8;
+  margin: 0;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#escape-room {
+  font-family: Arial, sans-serif;
+  width: 300px;
+  margin: 50px auto;
+  text-align: center;
+  border: 2px solid #333;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+input {
+  width: 80%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+#feedback {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* colors */
+.black {
+  background-color: #000000;
+}
+.pink {
+  background-color: #eb5674;
+}
+.yellow {
+  background-color: #fbee40;
+}
+.orange {
+  background-color: #fd5632;
+}
+.grey {
+  background-color: #d3d3d3;
+}
+.dark-grey {
+  background-color: #a9a9a9;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+.white {
+  background-color: white;
+}
+
+/* Increase font size for the death message */
+/* Instead of opacity, we use RGBA for background transparency */
+.aqua {
+  background-color: rgba(127, 255, 212, 0.4); /* Aqua with opacity */
+}
+
+/* Keep modal backgrounds solid */
+.modal,
+.roomodal {
+  opacity: 1; /* Keep modals unaffected */
+}
+#countdown {
+  font-size: 3vmax; /* Adjust as needed for larger text */
+  font-weight: bold;
+  color: black; /* Optional: make the death message text red */
+}
+
+p {
+  font-size: 3vmax; /* Adjust as needed for larger text */
+  font-weight: bold;
+  color: white;
+}
+
+p1 {
+  font-size: 3vmax; /* Adjust as needed for larger text */
+  font-weight: bold;
+  color: blue;
+}

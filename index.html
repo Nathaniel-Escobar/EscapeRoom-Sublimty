@@ -1,0 +1,264 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Level 37: LOCKED IN</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="cover" id="vidc">
+      <video id="intro" autoplay muted>
+        <source src="vid/it.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- First Row -->
+    <div class="intro cc" id="begin">
+      <span class="close" onclick="hideIntro()">&times;</span>
+      <div class="mc2 cc">
+        <h1 class="text cc">
+          THE WATER IS RISING, FIND THE CODE TO GET THE HECK OUTTA HERE!!!!!
+        </h1>
+      </div>
+    </div>
+    <div class="top">
+      <div class="top ct" id="box4">
+        <div class="fir">
+          <span id="countdown">04:00</span>
+        </div>
+      </div>
+      <div class="top" id="box3"></div>
+    </div>
+    <!-- Second Row -->
+    <div class="low1" id="box2">
+      <div class="first"></div>
+      <div class="second clickable cc" id="sewerdiv" onclick="">
+        <img id="sw" src="images/Sewergrate.png" onclick="showPrompt()" />
+      </div>
+      <div class="third clickable cc">
+        <img src="images/quesionmark.png" onclick="showMisc()" />
+      </div>
+      <div class="modal" id="poly">
+        <span class="close" onclick="hideMisc()">&times;</span>
+        <div class="mc">
+          <div class="lowfir cc white">
+            <div class="third cc white">
+              <img src="images/Cypher.png" />
+            </div>
+            <div class="third cc">
+              <img src="images/Cypher puzzle.png" />
+            </div>
+          </div>
+          <div class="lowfir cc" id="answer">
+            <div id="answerBox">
+              <p1>What is the Number? (Third line only)</p1>
+              <input
+                type="text"
+                id="userAnswerBox"
+                placeholder="Type the number only"
+                autocomplete="off"
+              />
+              <button onclick="checkAnswerBox()">Submit</button>
+              <p1 id="answerFeedback"></p1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="low2" id="box1">
+      <div class="flexdiv">
+        <div class="lowfir cc clickable">
+          <img src="images/arrowimg.png" onclick="showRoom()" />
+        </div>
+        <div class="roomodal" id="arrow">
+          <span class="close clickable" onclick="hideRoom()">&times;</span>
+          <div class="roomc">
+            <div class="lowfir">
+              <div class="third">
+                <div class="top"></div>
+                <div class="top">
+                  <img
+                    src="images/sunshine.jpeg"
+                    id="rightImage"
+                    class="clickable"
+                    onclick="showSS()"
+                  />
+                </div>
+              </div>
+              <div class="third"></div>
+            </div>
+            <div class="lowfir">
+              <div class="third cc">
+                <div class="low1">
+                  <div class="third"></div>
+                  <div class="third cc">
+                    <img
+                      src="images/hand.png"
+                      class="clickable"
+                      onclick="showBlood()"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="third">
+                <div class="tf">
+                  <div class="third"></div>
+                  <div class="second cc">
+                    <img
+                      src="images/knife.png"
+                      class="clickable"
+                      onclick="showChart()"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lowfir"></div>
+      </div>
+
+      <div class="modal green" id="ss">
+        <span class="close" onclick="hideSS()">&times;</span>
+        <div class="mc">
+          <div class="lowfir white cc">
+            <img src="images/LEBRON.jpg" />
+          </div>
+          <div class="lowfir cc">
+            <p>
+              Lebron has graced you with his presence, which he provides you
+              with this wisdom:
+            </p>
+            <p>
+              "Welcome back, nice to see you sport, just gonna let you know that
+              6 is the last number. Good Luck Sport!"
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="chart">
+        <span class="close" onclick="hideChart()">&times;</span>
+        <div class="mc">
+          <div class="lowfir">
+            <div class="third cc">
+              <img src="images/chart.png" />
+            </div>
+            <div class="third cc">
+              <img src="images/Numberline.png" />
+            </div>
+          </div>
+          <div class="lowfir cc" id="answer">
+            <div id="answerBox3">
+              <p1>What is the Number?</p1>
+              <input
+                type="text"
+                id="userAnswerBox3"
+                placeholder="Enter answer..."
+                autocomplete="off"
+              />
+              <button onclick="checkAnswerBox3()">Submit</button>
+              <p1 id="answerFeedback3"></p1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="hand">
+        <span class="close" onclick="hideBlood()">&times;</span>
+        <div class="mc">
+          <div class="lowfir cc">
+            <img src="images/Backwards.png" />
+          </div>
+          <div class="lowfir cc" id="answer">
+            <div id="answerBox2">
+              <p1>What is the Number?:</p1>
+              <input
+                type="text"
+                id="userAnswerBox2"
+                placeholder="Enter answer..."
+                autocomplete="off"
+              />
+              <button onclick="checkAnswerBox2()">Submit</button>
+              <p1 id="answerFeedback2"></p1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lowsec"></div>
+      <div class="lowthird clickable cc">
+        <img src="images/skelydude.png" onclick="showKey()" />
+      </div>
+
+      <div class="modal green" id="skelly">
+        <span class="close" onclick="hideKey()">&times;</span>
+        <div class="mc">
+          <div class="lowfir cc">
+            <img src="images/threeeee.png" />
+          </div>
+          <div class="lowfir cc">
+            <p>You find a note with the number 3. The back has note...</p>
+            <p>
+              I endeavored to flee, yet alas, I could not, for the hour is far
+              spent, and my chance is lost...
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="blockdiv">
+        <div class="lowfir clickable" onclick="showRid()">
+          <img src="images/ball.png" />
+        </div>
+        <div class="modal" id="rid">
+          <span class="close" onclick="hideRid()">&times;</span>
+          <div class="mc">
+            <div class="lowfir cc">
+              <p>
+                In the endless halls, I am your guide, Through twisted spaces
+                where truths collide. Start with me, the lone and true, The only
+                escape begins with who?
+              </p>
+            </div>
+            <div class="lowfir cc">
+              <p>
+                Hint: You Start at this level, and you will need this as your
+                third number for the lock
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lowfir"></div>
+      </div>
+      <div class="modal" id="sewer">
+        <span class="close" onclick="hidePrompt()">&times;</span>
+        <div class="mc">
+          <div class="lowfir cc">
+            <img src="images/masterlock.png" />
+          </div>
+          <div class="lowfir">
+            <div id="escape-room">
+              <ps>Type the numbers in order QUICKLY!!!</ps>
+              <input
+                type="text"
+                id="userAnswer"
+                autocomplete="off"
+                placeholder="First to Last, make sure you're right"
+              />
+              <button onclick="checkAnswer()">Submit</button>
+              <p id="feedback"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <audio src="audio/CaveAudio.mp3" id="cave"></audio>
+    <audio src="audio/Drowning.mp3" id="ded"></audio>
+    <audio src="audio/u r my sunshine.mp3" id="sun"></audio>
+    <script src="javascript.js"></script>
+    <script src="preload.js"></script>
+  </body>
+</html>
